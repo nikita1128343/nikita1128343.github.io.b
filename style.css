@@ -1,4 +1,4 @@
-/* Mobile First - базовые стили для мобильных */
+
 
 * {
     margin: 0;
@@ -74,7 +74,7 @@ body {
     background-color: #2c3e50;
 }
 
-/* Ключевое исправление: добавлен display: flex */
+
 main.container {
     display: flex; /* добавлено */
     flex-direction: column;
@@ -84,7 +84,7 @@ main.container {
     min-height: calc(100vh - 320px); /* header + footer + nav + margin */
 }
 
-/* Используем flex order для таблицы и списка ссылок */
+
 #table-section {
     order: 1;
 }
@@ -93,7 +93,7 @@ main.container {
     order: 2;
 }
 
-/* В HTML форма — section с id="contact-form", а в CSS у вас form#contact-form, нужно исправить селектор */
+
 #contact-form {
     order: 3;
     max-width: 100%;
@@ -247,7 +247,7 @@ input[type="submit"]:hover {
     font-size: 0.9rem;
 }
 
-/* Media Queries для планшетов и десктопов */
+
 
 @media (min-width: 769px) {
     .container {
@@ -299,7 +299,7 @@ input[type="submit"]:hover {
     }
 
     #table-section {
-        order: 0; /* таблица выше ссылок */
+        order: 0; 
     }
 
     #links-section {
@@ -312,3 +312,4 @@ input[type="submit"]:hover {
         margin: 0 auto;
     }
 }
+
