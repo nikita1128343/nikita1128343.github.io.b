@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Сайт КубГУ</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header id="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flower_jtca001.jpg" alt="Логотип КубГУ" class="logo" />
+                    <h1 class="site-title">Кубанский государственный университет</h1>
+                </div>
+                <nav class="main-nav" aria-label="Главное меню">
+                    <a href="#table-section">Таблица</a>
+                    <a href="#links-section">Ссылки</a>
+                    <a href="#contact-form">Форма</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="table-section" aria-labelledby="table-title">
+            <h2 id="table-title">Таблица с информацией</h2>
+            <table class="data-table" summary="Информация о факультетах, специальностях, количестве студентов, годах основания и статусе">
+                <thead>
+                    <tr>
+                        <th scope="col">Факультет</th>
+                        <th scope="col">Специальность</th>
+                        <th scope="col">Количество студентов</th>
+                        <th scope="col">Год основания</th>
+                        <th scope="col">Статус</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Математики и компьютерных наук</td>
+                        <td>Прикладная математика</td>
+                        <td>120</td>
+                        <td>1970</td>
+                        <td>Аккредитован</td>
+                    </tr>
+                    <tr>
+                        <td>Информатика и вычислительная техника</td>
+                        <td>180</td>
+                        <td>1985</td>
+                        <td>Аккредитован</td>
+                    </tr>
+                    <tr>
+                        <td>Филологический</td>
+                        <td>Русский язык и литература</td>
+                        <td>90</td>
+                        <td>1960</td>
+                        <td>Аккредитован</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Экономический</td>
+                        <td>Экономика</td>
+                        <td>150</td>
+                        <td>1990</td>
+                        <td>Аккредитован</td>
+                    </tr>
+                    <tr>
+                        <td>Менеджмент</td>
+                        <td>130</td>
+                        <td>1995</td>
+                        <td>Аккредитован</td>
+                    </tr>
+                    <tr>
+                        <td>Юридический</td>
+                        <td>Юриспруденция</td>
+                        <td>200</td>
+                        <td>1975</td>
+                        <td>Аккредитован</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="links-section" aria-labelledby="links-title">
+            <h2 id="links-title">Список гиперссылок</h2>
+            <ul class="links-list">
+                <li>1. <a href="http://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта kubsu.ru</a></li>
+                <li>2. <a href="https://kubsu.ru">Абсолютную на главную сайта kubsu.ru в протоколе https</a></li>
+                <li>3. <a href="https://kubsu.ru/"><img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flower_jtca001.jpg" alt="Картинка-ссылка: КубГУ" width="150" height="150" /></a></li>
+                <li>4. <a href="pages/fackulrty.html">Сокращённая внутренняя страница</a></li>
+                <li>5. <a href="/">Сокращённая ссылка на главную страницу</a></li>
+                <li>6. <a href="#kartinka">Картинка с ID</a></li>
+                <li>7. <a href="https://example.com/search?q=example&amp;lang=english&amp;page=2">Поиск с 3 параметрами</a></li>
+                <li>8. <a href="https://example.com/item?id=qwer">Ссылка с параметром id (id=qwer)</a></li>
+                <li>9. <a href="page.html">Относительная на страницу в текущем каталоге</a></li>
+                <li>10. <a href="about/about.html">Относительная: в каталоге about</a></li>
+                <li>11. <a href="about/../index.html">Относительную на страницу в каталоге уровнем выше текущего</a></li>
+                <li>12. <a href="assets/pages/../../page.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+                <li>13. Контекстная <a href="https://moodle.kubsu.ru/my/">ссылка</a> в слове</li>
+                <li>14. <a href="https://www.kubsu.ru/index.php#region-sidebar-second">Ссылка на фрагмент страницы стороннего сайта</a></li>
+                <li>15. Ссылки из прямоугольных и круглых областей картинки (ниже)</li>
+                <li>16. <a href="">Пустой href</a></li>
+                <li>17. <a>Ссылка без href</a></li>
+                <li>18. <a href="https://www.kubsu.ru/ru/taxonomy/term/12" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+                <li>19. <a href="https://www.kubsu.ru/ru/timetable" rel="noindex">Запрещённая для индексации поисковиками</a></li>
+                <li>20.
+                    <ol>
+                        <li><a href="https://www.kubsu.ru/ru/university/library" title="библиотека">Первая страница</a></li>
+                        <li><a href="https://test.kubsu.ru/" title="тест">Вторая страница</a></li>
+                        <li><a href="https://www.kubsu.ru/ru/media" title="медиа-центр">Третья страница</a></li>
+                    </ol>
+                </li>
+                <li>21. <a href="ftp://user:password@ftp.example.com/public/file.zip">Ссылка на файл на сервере FTP с авторизацией</a></li>
+            </ul>
+
+            <section class="image-map-section" aria-label="Карта изображения с ссылками">
+                <h3>Карта изображения с ссылками</h3>
+                <figure>
+                    <img src="https://a.d-cd.net/QPlYDrSKPm_WxZbYlQr_nwoMyv8-960.jpg" alt="Пример изображения с областями" width="300" height="300" usemap="#map4" />
+                    <map name="map4">
+                        <area shape="rect" coords="0,0,100,100" href="https://dzen.ru/" alt="dzen" title="Прямоугольная область" />
+                        <area shape="circle" coords="150,150,50" href="https://www.kubsu.ru/index.php" alt="kubsu" title="Круглая область" />
+                    </map>
+                    <figcaption>Изображение с интерактивными областями</figcaption>
+                </figure>
+                <img id="kartinka" src="https://www.rosphoto.com/images/u/articles/1510/7_5.jpg" alt="Изображение с якорем" width="300" height="300" />
+            </section>
+        </section>
+
+        <section id="contact-form" aria-labelledby="form-title">
+            <h2 id="form-title">Форма обратной связи</h2>
+            <form action="https://httpbin.org/post" method="post" enctype="application/x-www-form-urlencoded" autocomplete="on">
+                <label for="fullname">ФИО:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Иванов Иван Иванович" required minlength="6" />
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+7 (_) _--" required minlength="11" />
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required />
+
+                <label for="bdate">Дата рождения:</label>
+                <input type="date" id="bdate" name="birthdate" required />
+
+                <fieldset>
+                    <legend>Пол:</legend>
+                    <label><input type="radio" name="gender" value="male" /> Мужской</label>
+                    <label><input type="radio" name="gender" value="female" /> Женский</label>
+                </fieldset>
+
+                <label for="langs">Любимый(е) язык(и) программирования (выберите один или несколько):</label>
+                <select id="langs" name="languages[]" multiple size="6">
+                    <option value="Pascal">Pascal</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="PHP">PHP</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="Haskel">Haskel</option>
+                    <option value="Clojure">Clojure</option>
+                    <option value="Prolog">Prolog</option>
+                    <option value="Scala">Scala</option>
+                </select>
+
+                <label for="bio">Краткая биография:</label>
+                <textarea id="bio" name="biography" rows="6" cols="60" placeholder="Расскажите о себе..." required></textarea>
+
+                <label><input type="checkbox" id="agree" name="agree" required /> С контрактом ознакомлен(а)</label>
+
+                <input type="submit" value="Сохранить" />
+            </form>
+        </section>
+    </main>
+
+    <footer id="site-footer">
+        <div class="container">
+            <p>&copy; Джейме Ланнистер</p>
+        </div>
+    </footer>
+</body>
+</html>
